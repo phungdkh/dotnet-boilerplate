@@ -1,0 +1,9 @@
+.vs/
+Core/SampleProject.Domain/bin/
+Core/SampleProject.Domain/obj/
+Core/SampleProject.Shared/bin/
+Core/SampleProject.Shared/obj/
+Presentation/SampleProject.Api/bin/
+Presentation/SampleProject.Api/obj/
+Presentation/SampleProject.Application/obj/
+Presentation/SampleProject.Application/bin/

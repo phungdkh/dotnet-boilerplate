@@ -1,0 +1,44 @@
+version: '3.4'
+
+services:
+  SampleProject_api:
+    container_name: SampleProject_api
+    image: SampleProject_api
+    build:
+      context: .
+      dockerfile: Dockerfile_local
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - "1111:80"
+      - "1112:443"
+    depends_on:
+      - postgres
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+    networks:
+      - SampleProject
+
+  postgres:
+    container_name: SampleProject_postgres
+    image: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pass@123123}
+      PGDATA: /data/postgres
+    volumes:
+       - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - SampleProject
+    restart: unless-stopped
+
+networks:
+  SampleProject:
+    driver: bridge
+
+volumes:
+    postgres:
