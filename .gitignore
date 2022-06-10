@@ -1,0 +1,9 @@
+.vs/
+Core/PhungDKH.Domain/bin/
+Core/PhungDKH.Domain/obj/
+Core/PhungDKH.Shared/bin/
+Core/PhungDKH.Shared/obj/
+Presentation/PhungDKH.Api/bin/
+Presentation/PhungDKH.Api/obj/
+Presentation/PhungDKH.Application/obj/
+Presentation/PhungDKH.Application/bin/
