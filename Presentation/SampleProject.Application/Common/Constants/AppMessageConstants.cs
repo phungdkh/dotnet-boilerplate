@@ -21,5 +21,18 @@
         public const string USER_NOT_FOUND = "message.me.profile.userNotFound";
 
         #endregion
+
+        #region Company 
+
+        public const string COMPANY_NOT_FOUND = "message.companyNotFound";
+        public const string COMPANY_CREATED_SUCCESSFULLY = "message.companyCreatedSuccessfully";
+        public const string COMPANY_UPDATED_SUCCESSFULLY = "message.companyUpdatedSuccessfully";
+        public const string COMPANY_DELETED_SUCCESSFULLY = "message.companyDeletedSuccessfully";
+        public const string COMPANY_RESTORED_SUCCESSFULLY = "message.companyRestoredSuccessfully";
+        public const string COMPANY_EXISTED = "message.companyExisted";
+        public const string ORGANIZATION_ID_EXISTED = "message.organizationIdExisted";
+        public const string COMPANY_TYPE_NOT_FOUND = "message.companyTypeNotFound";
+        
+        #endregion
     }
 }
