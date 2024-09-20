@@ -6,7 +6,7 @@ using SampleProject.Shared.Mvc.Filters;
 namespace SampleProject.Api.Controllers
 {
     /// <summary>
-    ///   Initializes a new instance of the <see cref="sender" /> class.
+    ///   Initializes a new instance of the <see cref="AccountController" /> class.
     /// </summary>
     /// <param name="sender">The sender of mediator.</param>
     [Route("api/account")]

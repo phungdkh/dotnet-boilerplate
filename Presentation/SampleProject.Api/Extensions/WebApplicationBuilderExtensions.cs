@@ -48,7 +48,7 @@ namespace SampleProject.Api.Extensions
                         options.TrackExceptionsAsExceptionTelemetry = false;
                     }
                 );
-                builder.Logging.AddFilter<ApplicationInsightsLoggerProvider>("detection-be", LogLevel.Trace);
+                builder.Logging.AddFilter<ApplicationInsightsLoggerProvider>("sample-project-api", LogLevel.Trace);
             }
             else
             {
